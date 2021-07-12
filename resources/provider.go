@@ -29,6 +29,7 @@ func Provider() *provider.Provider {
 			"security.settings":                   SecuritySettings(),
 			"sql.servers":                         SQLServers(),
 			"storage.accounts":                    StorageAccounts(),
+			"web.apps":                            WebApps(),
 		},
 		Config: func() provider.Config {
 			return &client.Config{}
